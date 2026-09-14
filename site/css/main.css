@@ -42,7 +42,7 @@
   --overlay-strong: rgba(18, 15, 10, 0.95);
   --backdrop: rgba(4, 4, 4, 0.94);
 
-  --m: "Ioskeley Mono", "IBM Plex Mono", "Cascadia Code", "JetBrains Mono", monospace;
+  --m: "Sunsheet", "IBM Plex Mono", "Cascadia Code", "JetBrains Mono", monospace;
 }
 
 /* Kintsugi Light Flared. Ramps invert: each step stays one shade further
@@ -88,54 +88,61 @@
   --backdrop: rgba(236, 231, 220, 0.94);
 }
 
-/* Width font families — only Normal loaded by default */
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-Thin.woff2") format("woff2"); font-weight: 100; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-ThinItalic.woff2") format("woff2"); font-weight: 100; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-ExtraLight.woff2") format("woff2"); font-weight: 200; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-ExtraLightItalic.woff2") format("woff2"); font-weight: 200; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-Light.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-LightItalic.woff2") format("woff2"); font-weight: 300; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-SemiLight.woff2") format("woff2"); font-weight: 350; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-SemiLightItalic.woff2") format("woff2"); font-weight: 350; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-MediumItalic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-SemiBoldItalic.woff2") format("woff2"); font-weight: 600; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-BoldItalic.woff2") format("woff2"); font-weight: 700; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-ExtraBold.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-ExtraBoldItalic.woff2") format("woff2"); font-weight: 800; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-Black.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono"; src: url("../fonts/IoskeleyMono-BlackItalic.woff2") format("woff2"); font-weight: 900; font-style: italic; font-display: swap; }
+/* SUNSHEET_FONT_FACE_START */
+/* Width font families — full-coverage Sunsheet WOFF2 faces */
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-Thin.woff2") format("woff2"); font-weight: 100; font-style: normal; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-ThinItalic.woff2") format("woff2"); font-weight: 100; font-style: italic; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-ExtraLight.woff2") format("woff2"); font-weight: 200; font-style: normal; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-ExtraLightItalic.woff2") format("woff2"); font-weight: 200; font-style: italic; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-Light.woff2") format("woff2"); font-weight: 300; font-style: normal; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-LightItalic.woff2") format("woff2"); font-weight: 300; font-style: italic; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiLight.woff2") format("woff2"); font-weight: 350; font-style: normal; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiLightItalic.woff2") format("woff2"); font-weight: 350; font-style: italic; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-MediumItalic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiBoldItalic.woff2") format("woff2"); font-weight: 600; font-style: italic; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-BoldItalic.woff2") format("woff2"); font-weight: 700; font-style: italic; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-ExtraBold.woff2") format("woff2"); font-weight: 800; font-style: normal; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-ExtraBoldItalic.woff2") format("woff2"); font-weight: 800; font-style: italic; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-Black.woff2") format("woff2"); font-weight: 900; font-style: normal; font-stretch: normal; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-BlackItalic.woff2") format("woff2"); font-weight: 900; font-style: italic; font-stretch: normal; font-display: swap; }
 
 /* Semi-Condensed */
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedThin.woff2") format("woff2"); font-weight: 100; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedThinItalic.woff2") format("woff2"); font-weight: 100; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedExtraLight.woff2") format("woff2"); font-weight: 200; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedExtraLightItalic.woff2") format("woff2"); font-weight: 200; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedLight.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedLightItalic.woff2") format("woff2"); font-weight: 300; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedSemiLight.woff2") format("woff2"); font-weight: 350; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedSemiLightItalic.woff2") format("woff2"); font-weight: 350; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensed.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedItalic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedMedium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedMediumItalic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedSemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedSemiBoldItalic.woff2") format("woff2"); font-weight: 600; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedBold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedBoldItalic.woff2") format("woff2"); font-weight: 700; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedExtraBold.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedExtraBoldItalic.woff2") format("woff2"); font-weight: 800; font-style: italic; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedBlack.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; }
-@font-face { font-family: "Ioskeley Mono SC"; src: url("../fonts/IoskeleyMono-SemiCondensedBlackItalic.woff2") format("woff2"); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedThin.woff2") format("woff2"); font-weight: 100; font-style: normal; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedThinItalic.woff2") format("woff2"); font-weight: 100; font-style: italic; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedExtraLight.woff2") format("woff2"); font-weight: 200; font-style: normal; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedExtraLightItalic.woff2") format("woff2"); font-weight: 200; font-style: italic; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedLight.woff2") format("woff2"); font-weight: 300; font-style: normal; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedLightItalic.woff2") format("woff2"); font-weight: 300; font-style: italic; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedSemiLight.woff2") format("woff2"); font-weight: 350; font-style: normal; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedSemiLightItalic.woff2") format("woff2"); font-weight: 350; font-style: italic; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensed.woff2") format("woff2"); font-weight: 400; font-style: normal; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedItalic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedMedium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedMediumItalic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedSemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedSemiBoldItalic.woff2") format("woff2"); font-weight: 600; font-style: italic; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedBold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedBoldItalic.woff2") format("woff2"); font-weight: 700; font-style: italic; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedExtraBold.woff2") format("woff2"); font-weight: 800; font-style: normal; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedExtraBoldItalic.woff2") format("woff2"); font-weight: 800; font-style: italic; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedBlack.woff2") format("woff2"); font-weight: 900; font-style: normal; font-stretch: semi-condensed; font-display: swap; }
+@font-face { font-family: "Sunsheet"; src: url("../fonts/Sunsheet-SemiCondensedBlackItalic.woff2") format("woff2"); font-weight: 900; font-style: italic; font-stretch: semi-condensed; font-display: swap; }
+/* SUNSHEET_FONT_FACE_END */
 
 /* Width classes */
-html.sc { --m: "Ioskeley Mono SC", "IBM Plex Mono", "Cascadia Code", "JetBrains Mono", monospace; }
+html.sc { --font-stretch: semi-condensed; }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-synthesis: none;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -153,6 +160,7 @@ html {
 
 body {
   font-family: var(--m);
+  font-stretch: var(--font-stretch, normal);
   background: var(--bg);
   color: var(--text);
   font-size: 15px;
@@ -562,11 +570,13 @@ strong { font-weight: 600; color: var(--text); }
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
 }
 .lightbox.active {
+  visibility: visible;
   opacity: 1;
   pointer-events: auto;
 }
@@ -868,7 +878,7 @@ strong { font-weight: 600; color: var(--text); }
 .split-diff-content .token.atrule { color: var(--syn-bool); font-weight: 600; }
 .split-diff-content .token.function,
 .split-diff-content .token.class-name { color: var(--syn-fn); }
-/* Right-align the label so the clipped Ioskeley layer doesn't cover it.
+/* Right-align the label so the clipped Sunsheet layer doesn't cover it.
    width:auto keeps it inside the visible area; <pre> won't wrap anyway. */
 .split-diff-layer--after .split-diff-content {
   width: auto;
