@@ -1,141 +1,134 @@
-# Ioskeley Mono
+# Sunsheet
 
 <p align="center">
-  <img src="assets/SocialPreview.png" alt="Ioskeley Mono — open-source programming typeface" width="100%">
+  <strong>A full-coverage geometric monospace webfont built with Iosevka.</strong><br>
+  Cyrillic, Greek, programming ligatures, two widths, ten weights, and real italics.
 </p>
 
-<p align="center">
-  <a href="https://github.com/ahatem/IoskeleyMono/releases/latest"><img src="https://img.shields.io/github/v/release/ahatem/IoskeleyMono?style=flat-square&color=b8943a" alt="Latest release"></a>
-  <a href="https://github.com/ahatem/IoskeleyMono/releases"><img src="https://img.shields.io/github/downloads/ahatem/IoskeleyMono/total?style=flat-square&color=333" alt="Total downloads"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-SIL%20OFL%201.1-b8943a?style=flat-square" alt="SIL Open Font License 1.1"></a>
-  <a href="https://ahatem.github.io/IoskeleyMono/"><img src="https://img.shields.io/badge/showcase-live-b8943a?style=flat-square" alt="Live showcase"></a>
-</p>
+Sunsheet preserves the glyph choices and metrics of Ioskeley Mono under a new,
+distinct family name. It is distributed only as a full WOFF2 web family.
 
-<p align="center">
-  <strong>A compact, geometric programming typeface built with Iosevka.</strong><br>
-  Tuned for editors, terminals, and the web. Inspired by the character of Berkeley Mono.
-</p>
+## Distribution
 
-<p align="center">
-  <a href="https://ahatem.github.io/IoskeleyMono/"><strong>Try the live showcase</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/ahatem/IoskeleyMono/releases/latest"><strong>Download the latest release</strong></a>
-</p>
+Sunsheet ships one release artifact: **`Sunsheet-Web-Full.zip`**.
 
-<p align="center">
-  <sub>Ioskeley Mono is free to use. Stars, shared setups, bug reports, and contributions all help the project grow.</sub>
-</p>
+- 40 static WOFF2 faces: 10 weights × 2 widths × upright/italic
+- Normal and SemiCondensed widths
+- complete Iosevka glyph repertoire retained
+- Cyrillic and Greek included
+- programming ligatures and OpenType features included
+- no Latin-only subset, desktop, terminal, Nerd Font, or no-ligature packages
 
-<p align="center">
-  <a href="#why-i-built-ioskeley-mono">Story</a> ·
-  <a href="#downloads--variants">Downloads</a> ·
-  <a href="#design">Design</a> ·
-  <a href="#installation">Installation</a> ·
-  <a href="#editor-configuration">Configuration</a> ·
-  <a href="#build-from-source">Build</a>
-</p>
+## High-fidelity web rendering
 
----
+Copy `WOFF2/` and `sunsheet.css` from the archive to the same public directory:
 
-## Why I Built Ioskeley Mono
-
-For a long time, Berkeley Mono was the font I dreamed of using one day. I loved its compact proportions, geometric shapes, and the character it gave to code. But I could not afford it at the time, so I kept searching for a free typeface that could give me a similar feeling.
-
-Eventually, I found [Iosevka](https://github.com/be5invis/Iosevka) and realized I could shape something of my own. I generated and tested more than a hundred builds—installing and uninstalling them, zooming in and out, comparing individual glyphs, adjusting spacing and proportions, and repeatedly trying the font in real editors. I kept refining it until it felt as close as I could make it to what I had imagined.
-
-Ioskeley Mono grew out of that process. I made it for anyone who admires this kind of carefully designed programming typeface but cannot justify the price of a commercial font—especially students, people beginning their careers, or anyone who simply wants a distinctive coding font without a high price standing in the way.
-
-It is not Berkeley Mono, nor is it intended to replace the original. It is an independent typeface built with Iosevka, shaped by the qualities that inspired me, and shared freely so more people can enjoy that same kind of character in their own work.
-
-## Downloads & Variants
-
-Not sure which file to choose? Start with **[`IoskeleyMono.zip`](https://github.com/ahatem/IoskeleyMono/releases/latest/download/IoskeleyMono.zip)** for an editor or **[`IoskeleyMono-Term.zip`](https://github.com/ahatem/IoskeleyMono/releases/latest/download/IoskeleyMono-Term.zip)** for a terminal.
-
-| Package | Best for | Ligatures | Nerd Font icons |
-|---|---|:---:|:---:|
-| **[`IoskeleyMono.zip`](https://github.com/ahatem/IoskeleyMono/releases/latest/download/IoskeleyMono.zip)** | VS Code, JetBrains IDEs, Zed, Sublime Text, Cursor | Yes | No |
-| **[`IoskeleyMono-NerdFont.zip`](https://github.com/ahatem/IoskeleyMono/releases/latest/download/IoskeleyMono-NerdFont.zip)** | Editors that need patched symbols and icons | Yes | Yes |
-| **[`IoskeleyMono-Term.zip`](https://github.com/ahatem/IoskeleyMono/releases/latest/download/IoskeleyMono-Term.zip)** | Kitty, Ghostty, WezTerm, Alacritty | Yes | No |
-| **[`IoskeleyMono-Term-NerdFont.zip`](https://github.com/ahatem/IoskeleyMono/releases/latest/download/IoskeleyMono-Term-NerdFont.zip)** | Terminals, prompts, and terminal-based editors that need icons | Yes | Yes |
-| **[`IoskeleyMono-NL.zip`](https://github.com/ahatem/IoskeleyMono/releases/latest/download/IoskeleyMono-NL.zip)** | Apps that cannot disable ligatures, including Xcode | No | No |
-| **[`IoskeleyMono-NL-NerdFont.zip`](https://github.com/ahatem/IoskeleyMono/releases/latest/download/IoskeleyMono-NL-NerdFont.zip)** | The no-ligature family with patched symbols and icons | No | Yes |
-| **[`IoskeleyMono-Web.zip`](https://github.com/ahatem/IoskeleyMono/releases/latest/download/IoskeleyMono-Web.zip)** | Websites using Latin text, punctuation, arrows, math, or box drawing | Yes | No |
-| **[`IoskeleyMono-Web-Full.zip`](https://github.com/ahatem/IoskeleyMono/releases/latest/download/IoskeleyMono-Web-Full.zip)** | Websites that also need the complete desktop glyph set | Yes | No |
-
-> [!TIP]
-> **Using a terminal?** Choose a `Term` package. Its spacing keeps arrows and box-drawing glyphs inside their cells.
+```html
+<link
+  rel="preload"
+  href="/fonts/WOFF2/Sunsheet-Regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
 >
-> **Building a website?** Start with `IoskeleyMono-Web.zip`. Choose `Web-Full` only when you need Greek, Cyrillic, long arrows, or less common mathematical symbols. Both web archives use the same filenames, so switching between them does not require new `@font-face` rules.
-
-### Choose Your Width
-
-| Width | Relative width | Choose it when |
-|---|:---:|---|
-| **Normal** | 100% | You want the default balance of spacing and readability |
-| **SemiCondensed** | 90% | You want to fit more code on each line without changing the overall design |
-
-### Choose Your Rendering
-
-| Display | Folder |
-|---|---|
-| Windows or Linux on a standard-density display | **Hinted** |
-| macOS or any HiDPI display | **Unhinted** |
-
-Install one rendering set per width to avoid duplicate font entries. Nerd Font packages do not have separate hinted and unhinted copies.
-
-<details>
-<summary><strong>See the package folder structure</strong></summary>
-
-```text
-Normal/
-  Hinted/
-  Unhinted/
-SemiCondensed/
-  Hinted/
-  Unhinted/
+<link rel="stylesheet" href="/fonts/sunsheet.css">
 ```
 
-</details>
+```css
+:root { font-synthesis: none; }
+
+code,
+pre,
+kbd,
+samp {
+  font-family: "Sunsheet", monospace;
+  font-weight: 400;
+  font-stretch: normal;
+  font-variant-ligatures: contextual;
+  line-height: 1.55;
+  tab-size: 4;
+}
+```
+
+For the most faithful output:
+
+1. Use WOFF2 generated directly from the pinned source build.
+2. Load the real weight and italic face; never rely on synthetic bold or oblique.
+3. Do not scale text with CSS transforms or globally alter letter spacing.
+4. Preload only the above-the-fold face.
+5. Serve versioned files as `font/woff2` with immutable caching.
+6. Verify Chrome, Safari, and Firefox on both 1× and 2× displays.
+
+The complete family is about 19 MiB; individual faces are approximately
+450–519 KiB. Browsers fetch only matched `@font-face` resources, but production
+pages should still include or preload only the weights, styles, and widths they
+actually use.
+
+There is no browser “ultra quality” switch. CoreText, DirectWrite, and FreeType
+rasterize the same outlines differently. Sunsheet maximizes source fidelity and
+prevents avoidable browser synthesis; it cannot force pixel-identical output on
+every operating system.
 
 ## At a Glance
 
-- **40 static styles:** 10 weights × 2 widths × upright and italic.
+- **40 static WOFF2 faces:** 10 weights × 2 widths × upright and italic.
 - **Distinctive glyph choices:** dotted zero, single-storey `g`, open `6` and `9`, two-circle `8`, flat-arc parentheses, a raised underscore, and square punctuation dots.
-- **Programming ligatures:** enabled in the standard, Term, and web families, with dedicated NL builds when ligatures must stay off.
-- **Optional slashed zero:** enable the OpenType `zero` feature in applications that support it.
-- **Purpose-built packages:** regular desktop, terminal, Nerd Font, no-ligature, and web variants are produced by the release workflow.
+- **Programming ligatures:** retained, with CSS control through `font-variant-ligatures` and OpenType features.
+- **Full coverage:** Latin, Greek, Cyrillic, arrows, mathematics, box drawing, and the remaining Iosevka repertoire.
 
 ## Design
 
-Ioskeley Mono is not a stock Iosevka build. Its [build plan](./private-build-plans.toml) defines the glyph forms, widths, slopes, spacing, and vertical metrics used across the family.
+The build plan defines Normal advance 600, SemiCondensed advance 540, x-height
+520, cap height 690, ascender 740, side bearing 85, leading 1250, and an 11.8°
+italic. These are source metrics, not claims of metric identity with Berkeley
+Mono.
 
-The design balances three ideas:
+## Difference from Berkeley Mono
 
-- **Compact rhythm** — a dense but readable texture that keeps more code in view.
-- **Geometric clarity** — direct shapes, square details, and deliberately differentiated numerals.
-- **A complete working family** — the same visual system across two widths, ten weights, italics, terminals, and web use.
+Sunsheet is an independent Iosevka configuration, not a copy of Berkeley Mono
+font files or outlines. Measurements below compare Sunsheet Regular with the
+locally licensed `BerkeleyMonoTrial-Regular.otf`; both use 1000 units per em.
+They do not characterize Berkeley's other weights or italics.
 
-### Comparing the Details
+| Regular-face metric | Sunsheet | Berkeley Mono trial |
+| --- | ---: | ---: |
+| advance width | 600 | 600 |
+| x-height | 520 | 518 |
+| cap height | 690 | 680 |
+| `hhea` ascent | 965 | 956 |
+| `hhea` descent | -220 | -244 |
+| `hhea` line gap | 65 | 0 |
 
-Berkeley Mono was the starting point for the feeling I wanted. These images show what I studied while shaping Ioskeley Mono and where the two fonts differ.
+Matching 600-unit advances explain the similar code density, but the vertical
+metrics are not identical. Representative outline bounds also differ: `Q` is
+`(77, -52, 559, 698)` in Sunsheet versus `(63, -97, 536, 690)` in the Berkeley
+trial; `@` is `(43, -64, 557, 744)` versus `(55, -88, 544, 690)`.
 
-#### Character Forms
+Available Regular specimens show:
 
-A side-by-side study of numerals, punctuation, brackets, and common programming characters.
+| Glyph/group | Observed difference |
+| --- | --- |
+| `a`, `g` | Bowl geometry, joins, apertures, and terminals differ. |
+| `0` | Outer oval, weight distribution, and internal mark differ. |
+| `Q` | Tail origin, angle, length, and bowl intersection differ. |
+| `@` | Outer bowl, inner construction, aperture, and lower join differ. |
+| `$` | `S` contour and vertical-stroke intersections differ. |
+| `1`–`9` | Tops, bowls, diagonals, and terminals differ despite close cell rhythm. |
+| `I`, `l`, `i` | Serif construction, stem proportions, and dot treatment differ. |
+| `()[]{}` | Curvature, corners, and vertical reach differ. |
+| operators | Sunsheet uses Iosevka contextual ligatures; contours and substitutions are not identical. |
 
-![Character form comparison between Ioskeley Mono and Berkeley Mono](assets/01-Ioskeley-vs-Berkeley-Character-Forms.png)
+The upstream overlay demonstrates close baseline and cell advance only for its
+selected Regular glyphs and render settings. It does not establish identical
+outlines, hinting, all weights, all Unicode characters, or all browsers.
 
-#### Overlay Study
+The repository retains the original public comparison images for provenance:
 
-An overlay used to inspect baselines, proportions, shared areas, and visible edge differences.
+![Character form comparison](assets/01-Ioskeley-vs-Berkeley-Character-Forms.png)
 
-![Pixel overlay study of Ioskeley Mono and Berkeley Mono](assets/02-Ioskeley-vs-Berkeley-Pixel-Overlay.png)
+![Pixel overlay study](assets/02-Ioskeley-vs-Berkeley-Pixel-Overlay.png)
 
-#### Code Density
-
-A real-code specimen comparing line rhythm, spacing, and visual weight in an editor setting.
-
-![Real-code comparison between Ioskeley Mono and Berkeley Mono](assets/03-Ioskeley-vs-Berkeley-Real-Code.png)
+![Code density comparison](assets/03-Ioskeley-vs-Berkeley-Real-Code.png)
 
 ## Weights
 
@@ -156,91 +149,17 @@ Every weight is included in both widths, with an upright and italic style.
 
 ## Installation
 
-### Package Managers
+Extract `Sunsheet-Web-Full.zip` into your public font directory. The archive
+contains `WOFF2/`, `sunsheet.css`, this README, and the OFL licence. Import the
+stylesheet and use `font-family: "Sunsheet", monospace`.
 
-| System | Package | Install |
-|---|---|---|
-| macOS | [Homebrew](https://formulae.brew.sh/cask/font-ioskeley-mono) | `brew install --cask font-ioskeley-mono` |
-| Nix / NixOS | [nixpkgs](https://github.com/NixOS/nixpkgs/tree/master/pkgs/data/fonts/ioskeley-mono) | `nix profile install nixpkgs#ioskeley-mono.normal` |
-| Arch Linux | [AUR](https://aur.archlinux.org/packages/ttf-ioskeley-mono) | Package: `ttf-ioskeley-mono` |
-| Slackware | [SlackBuilds.org](https://slackbuilds.org/repository/15.0/system/IoskeleyMono/) | Package: `IoskeleyMono` |
-
-> [!NOTE]
-> Package repositories update on their own schedules and may not always carry the latest Ioskeley release. The [GitHub Releases page](https://github.com/ahatem/IoskeleyMono/releases/latest) is the source of truth for current builds and every available variant.
-
-Thanks to [@zhimoe](https://github.com/zhimoe), [@ForsakenHarmony](https://github.com/ForsakenHarmony), and [@frovere](https://github.com/frovere) for helping bring it to Homebrew.
-
-### Manual Installation
-
-- **macOS:** Unzip the download, select the `.ttf` files from your chosen width and rendering folder, then open them in Font Book and choose **Install**.
-- **Windows:** Unzip the download, select the `.ttf` files, right-click, and choose **Install for all users**.
-- **Linux:** Copy the selected `.ttf` files to `~/.local/share/fonts/IoskeleyMono/`, then run `fc-cache -fv`.
-
-Restart open applications after installation so they can refresh their font lists.
-
-## Editor Configuration
-
-Use the family name that matches the package you installed.
-
-| Package | Font family |
-|---|---|
-| Standard | `Ioskeley Mono` |
-| Standard Nerd Font | `IoskeleyMono Nerd Font Mono` |
-| Term | `Ioskeley Mono Term` |
-| Term Nerd Font | `IoskeleyMonoTerm Nerd Font Mono` |
-| No Ligatures | `Ioskeley Mono NL` |
-| No Ligatures Nerd Font | `IoskeleyMonoNL Nerd Font Mono` |
-
-### VS Code / Cursor
-
-```json
-{
-  "editor.fontFamily": "'Ioskeley Mono', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontWeight": "400",
-  "editor.fontSize": 14.5,
-  "editor.lineHeight": 1.55
-}
-```
-
-### Zed
-
-```json
-{
-  "buffer_font_family": "Ioskeley Mono",
-  "buffer_font_size": 15,
-  "buffer_line_height": "comfortable"
-}
-```
-
-### Ghostty
-
-```ini
-font-family = Ioskeley Mono Term
-font-size = 14
-```
-
-### Alacritty
-
-```toml
-[font.normal]
-family = "Ioskeley Mono Term"
-style = "Regular"
-```
-
-### Kitty
-
-```conf
-font_family      Ioskeley Mono Term
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
-font_size        14.0
-```
+The CSS declares every real weight, style, and width. Use
+`font-stretch: semi-condensed` for the 90% width and `font-stretch: normal` for
+the default width.
 
 ## OpenType Features
 
-Ioskeley Mono includes OpenType features that compatible applications can enable or disable.
+Sunsheet includes OpenType features that compatible browsers can enable or disable.
 
 | Feature | Effect |
 |---|---|
@@ -250,73 +169,48 @@ Ioskeley Mono includes OpenType features that compatible applications can enable
 | `onum` | Uses old-style figures |
 | `frac` | Formats fractions |
 
-```jsonc
-// VS Code / Cursor
-"editor.fontLigatures": "'calt', 'zero'"
-```
-
-```ini
-# Ghostty
-font-feature = zero
-```
-
-```conf
-# Kitty
-font_features IoskeleyMonoTerm +zero
-```
-
 ```css
-/* CSS */
-font-feature-settings: "zero";
+font-variant-ligatures: contextual;
+font-feature-settings: "calt" 1, "zero" 1;
 ```
+
+## Reproducible local overlay
+
+A true new overlay requires a locally licensed Berkeley Mono font. Render both
+fonts with the same face, size, DPI, renderer, feature settings, origin, and
+baseline. Do not commit or redistribute the Berkeley binary. A generated raster
+comparison documents only those exact conditions, not every browser or platform.
+
+```bash
+python3 -m pip install pillow
+python3 tools/render-berkeley-overlay.py \
+  --sunsheet-font Iosevka/dist/Sunsheet/TTF/Sunsheet-Regular.ttf \
+  --berkeley-font /path/to/licensed/BerkeleyMono-Regular.otf \
+  --output assets/Sunsheet-vs-Berkeley-FreeType-Overlay.png
+```
+
+![Controlled Sunsheet and Berkeley Mono FreeType overlay](assets/Sunsheet-vs-Berkeley-FreeType-Overlay.png)
 
 ## Build from Source
 
-Release builds are produced by [GitHub Actions](.github/workflows/build-font.yml). The current workflow pins Iosevka `v34.4.0` so tagged releases remain reproducible.
+The release workflow pins Iosevka `v34.4.0`:
 
 ```bash
-# Clone the project and the pinned Iosevka source
-git clone https://github.com/ahatem/IoskeleyMono.git
 git clone --branch v34.4.0 --depth 1 https://github.com/be5invis/Iosevka.git
-
-# Copy the custom build plan
-cp IoskeleyMono/private-build-plans.toml Iosevka/
-
-# Install dependencies and build every family
+cp private-build-plans.toml Iosevka/
 cd Iosevka
-npm install
-npm run build -- contents::IoskeleyMono contents::IoskeleyMonoTerm contents::IoskeleyMonoNL contents::IoskeleyMonoWeb
+npm ci
+npm run build -- woff2::Sunsheet
 ```
 
-Compiled files are written to `Iosevka/dist/<PlanName>/`. The release workflow also creates the hinted, Nerd Font, and packaged download variants.
-
-## Contributing
-
-Bug reports, glyph refinement proposals, ligature suggestions, documentation fixes, and build-plan improvements are welcome.
-
-- Review [`private-build-plans.toml`](./private-build-plans.toml) before proposing a character or metric adjustment.
-- Use [GitHub Issues](https://github.com/ahatem/IoskeleyMono/issues) for reproducible problems and design suggestions.
-- Use a pull request when you already have a tested change.
-
-## Help Ioskeley Grow
-
-Ioskeley Mono is free and open source. Support does not have to mean money—the most useful things are often the simplest:
-
-- **Star the repository** so more people can discover it.
-- **Share your setup** and show how the font looks in your editor or terminal.
-- **Report anything that feels off**, from a glyph or spacing issue to an installation problem.
-- **Contribute an improvement** to the build plan, documentation, packaging, or showcase.
-
-If Ioskeley Mono has become part of your daily setup and you would also like to support the time behind it, you can use [GitHub Sponsors](https://github.com/sponsors/ahatem) or [Buy Me a Coffee](https://www.buymeacoffee.com/ahmedhatem).
-
-Financial support is completely optional. It does not unlock a separate version of the font. It simply makes it easier to spend more time testing builds, refining glyphs, packaging releases, and maintaining the showcase.
+Generated fonts are written to `Iosevka/dist/Sunsheet/WOFF2/`. The workflow
+verifies all 40 faces, the Sunsheet family name, representative Cyrillic glyphs,
+and equal advances before creating `Sunsheet-Web-Full.zip`.
 
 ## License & Acknowledgments
 
-Ioskeley Mono is released under the [SIL Open Font License 1.1](./LICENSE). You may use it in personal and commercial work, including documents, applications, websites, and published media. If you redistribute the font itself or a modified version, follow the conditions in the license.
-
-The family is built with [Iosevka](https://github.com/be5invis/Iosevka), created by [Belleve Invis](https://github.com/be5invis) and its contributors. Iosevka provides the typeface construction system, glyph repertoire, and build tooling that made this project possible.
-
-The design direction was inspired by **Berkeley Mono**, created by Neil Panchal / [Berkeley Graphics](https://berkeleygraphics.com/typefaces/berkeley-mono/). Berkeley Mono is a commercial typeface. Ioskeley Mono is an independent Iosevka-based project. It is not affiliated with or endorsed by Berkeley Graphics.
-
-If you enjoy the original design and are in a position to do so, please consider purchasing Berkeley Mono. Supporting independent type designers helps more thoughtful typefaces get made.
+Sunsheet remains under the [SIL Open Font License 1.1](./LICENSE). The original
+Ioskeley Mono copyright and attribution are preserved. Iosevka was created by
+Belleve Invis and contributors. Berkeley Mono is a commercial typeface by Neil
+Panchal / Berkeley Graphics. Sunsheet is independent and is not affiliated with
+or endorsed by Berkeley Graphics.
